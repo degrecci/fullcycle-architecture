@@ -13,3 +13,9 @@ Precisamos ser capazes de modelarmos de forma mais assertiva os seus principais 
 <i>Uma entidade é algo que possuí uma continuade em seu ciclo de vida e pode ser distinguida independente dos atributos que são importantes para a aplicação do usuário. Pode ser uma pessoa, cidade, carro, um ticket de loteria ou uma transação bancaria</i> <b>Evans, Eric</b>
 
 Entidade = Identidade
+
+### Entidade anemica
+
+Entidade anemica é aquela entidade que só carrega dados (getters e setters), e que não possuí regras de negócio.
+
+### Regras de negócio
