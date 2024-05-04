@@ -24,3 +24,7 @@ Entidade anemica é aquela entidade que só carrega dados (getters e setters), e
 
 - Uma entidade tem sempre que representar o estado atual daquele elemento.
 - Os dados a todo momento precisam estar consistentes
+
+### Princípio da autovalidação
+
+- Uma entidade por padrão, ela sempre terá que se autovalidar, se uma entidade não se autovalidar ela corre o risco de ficar com o estado inconsistente.
