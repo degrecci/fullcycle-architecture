@@ -28,3 +28,21 @@ Entidade anemica é aquela entidade que só carrega dados (getters e setters), e
 ### Princípio da autovalidação
 
 - Uma entidade por padrão, ela sempre terá que se autovalidar, se uma entidade não se autovalidar ela corre o risco de ficar com o estado inconsistente.
+
+### Entidades vs ORM
+
+- Sua entidade deve ser focada em negocio e não em persistência.
+- Ter uma segunda entidade para persistir dados.
+- Arquivos independentes, contextos diferentes.
+
+```
+Complexidade de negocio
+domain
+- Entity
+- - customer.ts (regras de negocio)
+
+Complexidade acidental
+infra (mundo externo)
+- Entity / Model
+- - customer.ts (get, set)
+```
