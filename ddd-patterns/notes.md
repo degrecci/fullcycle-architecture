@@ -19,3 +19,8 @@ Entidade = Identidade
 Entidade anemica é aquela entidade que só carrega dados (getters e setters), e que não possuí regras de negócio.
 
 ### Regras de negócio
+
+### Consistencia constante em primeiro lugar
+
+- Uma entidade tem sempre que representar o estado atual daquele elemento.
+- Os dados a todo momento precisam estar consistentes

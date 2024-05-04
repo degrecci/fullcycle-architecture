@@ -1,17 +1,14 @@
 class Customer {
   _id: string;
-  _name: string;
-  _address: string;
-  _active: boolean;
+  _name: string = "";
+  _address: string = "";
+  _active: boolean = true;
 
-  constructor(id: string, name: string, address: string) {
+  constructor(id: string) {
     this._id = id;
-    this._name = name;
-    this._address = address;
-    this._active = true;
   }
 
-  set name(name: string) {\
+  set name(name: string) {
     this._name = name;
   }
 
@@ -27,3 +24,5 @@ class Customer {
     this._active = false;
   }
 }
+
+let customer = new Customer("123");
