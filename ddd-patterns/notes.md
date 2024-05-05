@@ -46,3 +46,25 @@ infra (mundo externo)
 - Entity / Model
 - - customer.ts (get, set)
 ```
+
+## Value Objects
+
+### Introdução aos objetos de valor
+
+- Sempre que modelamos nossos dados para criar nossas entidades, sempre trabalhamos com tipos primitivos (nome, endereço e etc), e isso é uma forma "pobre" de lidar, e para tornar essa modelagem mais "rica" precisamos modelar da forma mais expressiva o possivel com as suas caracteristicas.
+
+### Entendendo value objects
+
+<p><i>Quando você se preocupa apenar com os atributos de um elemento de um model, classifique isso como uma Value Object.</i></p>
+<p><i>Trate o Value Object como imutável.</i></p>
+<p><b>Eric, Evans</b></p>
+
+Address:
+
+- Street
+- City
+- State
+- Zip Code
+
+- Evite tipos primitivos para tudo e comece a criar seus proprios tipos que representam um conjunto de propriedades que vão fazer sentido pro seu sistema
+- Exemplo cpf: não é somente uma string, é um valor que se auto valida seguindo um conjunto de regras
