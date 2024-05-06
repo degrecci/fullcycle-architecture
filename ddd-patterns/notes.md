@@ -68,3 +68,16 @@ Address:
 
 - Evite tipos primitivos para tudo e comece a criar seus proprios tipos que representam um conjunto de propriedades que vão fazer sentido pro seu sistema
 - Exemplo cpf: não é somente uma string, é um valor que se auto valida seguindo um conjunto de regras
+
+## Agregados
+
+### Introdução aos agregados
+
+- Eventualmente uma entidade esta correlacionada com uma outra, como por exemplo um address que depende de um customer para fazer sentido.
+
+### Entendendo agregados
+
+_Um agregado é um conjunto de objetos associados que tratamos como uma unidade para propósito de mudança de dados_.
+**Evans, Eric**
+
+![Representação de agregados](./aggregate.jpg)
