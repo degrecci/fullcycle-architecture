@@ -17,7 +17,6 @@ export default class Customer {
   }
 
   validate() {
-    console.log(this._id);
     if (this._id.length === 0) {
       throw new Error("ID is required");
     }
