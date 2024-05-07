@@ -12,6 +12,10 @@ export default class Customer {
     this.validate();
   }
 
+  get name(): string {
+    return this._name;
+  }
+
   validate() {
     console.log(this._id);
     if (this._id.length === 0) {
@@ -28,8 +32,12 @@ export default class Customer {
     this.validate();
   }
 
+  isActive(): boolean {
+    return this._active;
+  }
+
   activate() {
-    if (this._address !== undefined) {
+    if (this._address === undefined) {
       throw new Error("Address is mandatory to activate a customer");
     }
     this._active = true;
