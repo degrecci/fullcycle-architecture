@@ -1,7 +1,7 @@
 import Order from "./order";
 import OrderItem from "./order_item";
 
-describe("Customer unit tests", () => {
+describe("Order unit tests", () => {
   it("should throw error when id is empty", () => {
     expect(() => new Order("", "customer", [])).toThrow("ID is required");
   });
