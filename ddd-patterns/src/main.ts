@@ -8,7 +8,7 @@ const address = new Address("Rua dois", "São Paulo", 123, "12345-678");
 customer.Address = address;
 customer.activate();
 
-const item1 = new OrderItem("1", "Item 1", 100);
-const item2 = new OrderItem("2", "Item 2", 200);
+const item1 = new OrderItem("1", "Item 1", 100, "p1", 2);
+const item2 = new OrderItem("2", "Item 2", 200, "p2", 2);
 
-const order = new Order("1", customer._id, [item1, item2]);
+const order = new Order("1", customer.id, [item1, item2]);
