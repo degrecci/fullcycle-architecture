@@ -97,3 +97,12 @@ _Quando um processo ou transformação significativa no domínio não for uma re
 
 - Quando houver muitos Domain Services em seu projeto, TALVEZ, isso pode indicar que seus agregados estão anêmicos.
 - Domain Services são Stateless
+
+## Repositories
+
+_Um repositório comumente ser refere a um local de armazenamento, geralmente considerado um local de segurança ou preservação dos itens nele armazenados.
+Quando você armazena algo em um repositório e depois retorna para recuperá-lo, você espera que ele esteja no mesmo estado que estava quando você colocou lá. Em algum momento, você pode optar por remover o item armazenado do repositório._
+**Vernon, Vaughn**
+
+_Esses objetos semelhantes a coleções são sobre persistência. Todo tipo Agregado persistente terá um Repositório. De um modo geral, existe uma relação um-para-um em um tipo Agregado e um Repositório._
+**Vernon, Vaughn**
