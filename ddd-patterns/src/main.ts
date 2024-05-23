@@ -4,7 +4,7 @@ import Order from "./domain/entity/order";
 import OrderItem from "./domain/entity/order_item";
 
 let customer = new Customer("123", "Degrecci");
-const address = new Address("Rua dois", "São Paulo", 123, "12345-678");
+const address = new Address("Rua dois", 123, "12345-678", "São Paulo");
 customer.Address = address;
 customer.activate();
 
