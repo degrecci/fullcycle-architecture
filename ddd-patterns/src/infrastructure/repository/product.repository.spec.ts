@@ -57,7 +57,7 @@ describe("Product repository test", () => {
     });
   });
 
-  xit("should find a product", async () => {
+  it("should find a product", async () => {
     const productRepository = new ProductRepository();
     const product = new Product("1", "product name", 100);
 
@@ -66,7 +66,7 @@ describe("Product repository test", () => {
     const productFromDb = await ProductModel.findOne({ where: { id: "1" } });
     const productFound = await productRepository.find("1");
 
-    expect(productFromDb).toStrictEqual({
+    expect(productFromDb.toJSON()).toStrictEqual({
       id: productFound.id,
       name: productFound.name,
       price: productFound.price,
