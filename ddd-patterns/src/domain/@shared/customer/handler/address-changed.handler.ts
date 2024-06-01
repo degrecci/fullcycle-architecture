@@ -1,5 +1,5 @@
 import AddressChangedEvent from "../address-changed.event";
-import EventHandlerInterface from "../../event-handler.interface";
+import EventHandlerInterface from "../../event/event-handler.interface";
 
 export default class AddressChangedHandler
   implements EventHandlerInterface<AddressChangedEvent>

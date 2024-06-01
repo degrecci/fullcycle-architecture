@@ -1,11 +1,11 @@
-import Address from "../../entity/address";
-import AddressChangedHandler from "./customer/handler/address-changed.handler";
-import Customer from "../../entity/customer";
+import Address from "../../customer/value-object/address";
+import AddressChangedHandler from "../customer/handler/address-changed.handler";
+import Customer from "../../customer/entity/customer";
 import EventDispatcher from "./event-dispatcher";
-import ProductCreatedEvent from "./product/product-created.event";
-import SendEmailWhenProductIsCreatedHandler from "./product/handler/send-email-when-product-is-created.handler";
-import SendMessageOneCustomerCreated from "./customer/handler/send-message-one-customer-created";
-import SendMessageTwoCustomerCreated from "./customer/handler/send-message-two-customer-created";
+import ProductCreatedEvent from "../../product/event/product-created.event";
+import SendEmailWhenProductIsCreatedHandler from "../../product/event/handler/send-email-when-product-is-created.handler";
+import SendMessageOneCustomerCreated from "../customer/handler/send-message-one-customer-created";
+import SendMessageTwoCustomerCreated from "../customer/handler/send-message-two-customer-created";
 
 describe("Domain events tests", () => {
   it("should register an event handler", () => {

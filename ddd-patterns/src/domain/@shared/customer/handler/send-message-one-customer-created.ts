@@ -1,5 +1,5 @@
 import CustomerCreatedEvent from "../customer-created.event";
-import EventHandlerInterface from "../../event-handler.interface";
+import EventHandlerInterface from "../../event/event-handler.interface";
 
 export default class SendMessageOneCustomerCreated
   implements EventHandlerInterface<CustomerCreatedEvent>
