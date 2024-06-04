@@ -152,3 +152,14 @@ _Em um contexto DDD, Módulos em seu modelo servem como contêineres nomeados pa
 - Um ou mais agregados devem estar juntos somente se fazem sentido
 - Organizado pelo domínio / subdomínio e não pelo tipo de objetos
 - Devem respeitar a mesma divisão quando estão em camadas diferentes
+
+## Factories
+
+_Desloque a responsabilidade de criar instâncias de objetos complexos e AGREGADOS para um objeto separado, que pode não ter uma responsabilidade no modelo de domínio, mas ainda faz parte do design do domínio. Forneça um interface que encapsule toda a criação complexa e que não exija que o cliente faça referenência às classes concretas dos objetos que estão sendo instanciados. Cria AGGREGATES inteiros de uma única vez, reforçando suas invariantes._
+**Evans Eric**
+
+### Dinâmica
+
+!["Factories"](./assets/factories.jpg)
+
+A factorie recebe a ordem do cliente de como ele quer que o objeto seja criado com todas as regras para que o agregado fique pronto.
